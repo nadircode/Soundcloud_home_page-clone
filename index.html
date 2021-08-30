@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>Stream and listen to music online for free with SoundCloud</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="body2">
+<header>
+    <nav class="nav__bar">
+      <div class="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAWCAQAAAAs/tcnAAABMUlEQVR4Ac3UJfQUARTGUaxnrBHpPeDu7u7uTg/QO/SK9q1U3KHg2i7fH4exNeSdc9/ZNL/RHfRfjdHOuOajt246b7Fh/T38WO/9OnfM7s+hx3gUh5XNWYN7D4wnTlOe6OGsv/6eQlQFmNX9WScTs4jqwD3DOr/j04gJxHyiOsCiTgITibnEdGIJURc410lgJrGYmE+sIuoCz1301BstGwxueqQLiVXEMmI9cVp7c9WIYmAqkUysIjYQa4mtRAJtJwb//kgXEdOJTcR2Yiuxi2g/wIYfgTnEBmIFsYvYS+whDhCdBFo/ApuJvcRO4hBxhDhMHCU6Cbz5EThKHCe+7BNEcXceKFxB/e7yFs0h1hP1u/OHXHiL6nfnr2nhO6jfR3r50L5cR9O+oX5+/FX8vfkElmh0Xu+KRLEAAAAASUVORK5CYII=" id="logo-img">
+        <span >soundcloud</span>
+      </div>
+      <div class="button-s">
+        <button id="sign-in">Sign in</button>
+        <button id="create-a">Create account</button>
+        <button id="creators">For Creators</button>
+      </div>
+      <div class="nav__title">
+          <h2 id="_title">Connect on SoundCloud</h2>
+          <p id="p_nav">Discover, stream, and share a constantly expanding mix of music<br> <span>from emerging and major artists around the world.</span></p>
+          <button id="sign-free">Sign up for free</button>
+      </div>
+    </nav>
+</header>
+<div class="main">
+  
+  <div class="search">
+    <input type="search" placeholder="Search for artists, bands, tracks, podcasts" id="search-in"><i class="bi bi-search"></i>
+    <span>  Or</span>
+    <button type="button" id="upload-btn">Upload your own</button>
+  </div>
+
+  <div class="trends-title">
+    Hear what’s trending for free in the SoundCloud community
+  </div>
+ 
+<div class="trends-song">
+  <ul class="trends-cards">
+      <!-- Card Eminem-->
+    <li class="eminem">
+      <ul class="cards">
+       <li> <div id="back-img1" onmouseover="show('play-btn1')" onmouseout="hide('play-btn1')" >
+        <button id="play-btn1">Play</button>
+      </div></li>
+       <li id="title-img"><a href="#"><h6>Rap God</h6></a></li>
+       <li id="name-sing"><a href="#"><p >Eminem</p></a></li> 
+      </ul> 
+   </li>
+    <!-- Card Justin Bieber-->
+    <li class="j-b">
+      <ul class="cards">
+       <li> <div id="back-img2" onmouseover="show('play-btn2')" onmouseout="hide('play-btn2')">
+         <button id="play-btn2">Play</button>
+       </div></li>
+       <li id="title-img"><a href="#"><h6>Baby</h6></a></li>
+       <li id="name-sing"><a href="#"><p>Justin Bieber</p></a></li> 
+      </ul> 
+   </li>
+   <!-- Card Cheb Bello-->
+   <li class="j-b">
+    <ul class="cards">
+     <li> <div id="back-img3" onmouseover="show('play-btn3')" onmouseout="hide('play-btn3')">
+      <button id="play-btn3">Play</button>
+    </div></li>
+     <li id="title-img"><a href="#"><h6>Lagmi</h6></a></li>
+     <li id="name-sing"><a href="#"><p>Cheb Bello</p></a></li> 
+    </ul> 
+ </li>
+ <!-- Card Med Ramadane-->
+ <li class="j-b">
+  <ul class="cards">
+   <li> <div id="back-img4" onmouseover="show('play-btn4')" onmouseout="hide('play-btn4')">
+    <button id="play-btn4">Play</button>
+  </div></li>
+   <li id="title-img"><a href="#"><h6>Ya habibi</h6></a></li>
+   <li id="name-sing"><a href="#"><p>Mohammed Ramadane</p></a></li> 
+  </ul> 
+</li>
+  </ul>
+
+  <button type="button" id="explore-btn">Explore trending playlists</button>
+</div>
+<div class="mobile-devices">
+  <div id="img-mobile">
+      <img src="https://a-v2.sndcdn.com/assets/images/never_stop_listening@1x-9c5264ff.jpg" alt="">
+      <div class="description">
+        <p id="title-desc">Never stop listening</p>
+        <span id="line"></span>
+        <p id="desc">SoundCloud is available on<br> Web, iOS, Android, Sonos,<br> Chromecast, and Xbox One.</p>
+        <div class="links-mobile">
+          <ul class="edit-mobile">
+            <li><a id="app-store" href="#"><img src="https://a-v2.sndcdn.com/assets/images/appstore_badge@en-9e7292e6.png"></a></li>
+            <li><a id="play-store" href="#"><img src="https://a-v2.sndcdn.com/assets/images/google_play_badge@en-51d52194.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      
+  </div>
+  
+</div>
+
+</div>
+
+  </div>
+  <div class="body-3">
+  <div class="about-us">
+    <div class="desc-aboutus">
+      <p id="title-us">Calling all creators</p>
+      <p id="desc-us">Get on SoundCloud to connect with fans, share<br> your sounds, and grow your audience. What are<br> you waiting for?</p>
+      <a class="find-btn" href="#">Find out more</a>
+    </div>
+  </div>
+  <div class="thanks">
+    <p id="t-1">Thanks for listening. Now join in.</p>
+    <p id="t-2">Save tracks, follow artists and build playlists. All for free.</p>
+    <button type="button" class="create-ac">Create account</button>
+    <span ><p>Already have an account?</p><a class="sign-in" href="#">Sign in</a></span>
+  </div>
+</div>
+</body>
+
+<footer>
+  <ul class="footer-links">
+    <li><a href="#">Directory</a></li>
+    <li><a href="#">Creator Resources</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Jobs</a></li>
+    <li><a href="#">Developers </a></li>
+    <li><a href="#"> Help </a></li>
+    <li><a href="#"> Legal </a></li>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Cookie Policy</a></li>
+    <li><a href="#">Cookie Manager </a></li>
+    <li><a href="#">Imprint</a> </li>
+    <li><a href="#">Charts</a></li>
+  </ul>
+  <a href="#" id="language">Language : <span id="lang-ch">English US</span></a>
+</footer>
+<script src="JS/script.js"></script>
+</html>
